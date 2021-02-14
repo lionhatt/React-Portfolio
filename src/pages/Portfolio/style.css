@@ -1,0 +1,21 @@
+.bg-color {
+    background-color: white;
+
+}
+
+.img{
+    width: 100%;
+    
+}
+
+@media screen and (max-width:768px){
+    .mediaQuary{
+        width:75%；
+    }
+}
+
+@media screen and (max-width:400px){
+    .mediaQuary{
+        width:100%；
+    }
+}
