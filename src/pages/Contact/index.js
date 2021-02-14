@@ -7,11 +7,13 @@ function Contact() {
     function sendEmail(e) {
         e.preventDefault();
         emailJs.sendForm('service_sle8clw', 'template_qxt0963', e.target, 'user_lPuQ9uhdSlhO6NBP2TrRb')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+            .then((result) => {
+                console.log(result.text);
+                setTimeout(function(){ alert("Sent Successfully!"); }, 3000);
+                document.getElementById("contactForm").reset()
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
 
@@ -27,7 +29,7 @@ function Contact() {
                         </div>
                         <div className="row mt-1">
                             <div className="col-md-10">
-                                <form className="p-2" onSubmit={sendEmail}>
+                                <form className="p-2" onSubmit={sendEmail} id="contactForm">
                                     <div className="form-group">
                                         <label htmlFor="exampleFormControlInput1">Name</label>
                                         <input name="name" type="text" className="form-control" id="exampleFormControlInput1" placeholder="Name (required)" />
@@ -46,8 +48,6 @@ function Contact() {
 
                                     <button className="btn btn-primary mb-5" type="submit">Submit</button>
                                 </form>
-
-
                             </div>
 
                         </div>
