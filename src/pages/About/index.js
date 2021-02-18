@@ -19,7 +19,7 @@ function About() {
                                 <p>
                                     I am a Melbourne-based web developer with a background in business development management and a
                                     certificate in full stack development from Monash University. I have a diverse set of skills, ranging
-                                    from HTML5, CSS3, JavaScript, Python, jQuery, Bootstrap, Express.js, Reat.js, Node.js, Database Theory,
+                                    from HTML5, CSS3, JavaScript, Python, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory,
                                     MongoDB, MySQL, Command Line, Git, and more. In my web development project with teammates in Monash, I
                                     created a workflow process that collaborated and led our team to deliver our proposed application within
                                     the timeframe.
